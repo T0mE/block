@@ -121,10 +121,140 @@
       text-align: center;
     }
 
+    .wrapp-logo {
+      width: 55%;
+    }
+
+    .top-banner img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 4rem;
+      /* width: 250px; */
+      font-weight: 800;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+
+    .top-art {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .about {
+      display: flex;
+      justify-content: space-around;
+      /* padding: 50px 0; */
+    }
+
+    .about img {
+      width: 100px;
+    }
+
+    .about h2 {
+      color: rgb(181 181 181);
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .topic {
+      padding-left: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .description {
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: rgb(106 106 106);
+    }
+
+    .primary-topic {
+      display: flex;
+      margin-top: 20px;
+      width: 90%;
+
+    }
+
+    .more button {
+      width: 140px;
+      height: 30px;
+      color: #fff;
+      background: rgb(241 93 81);
+      font-size: 1.2rem;
+      margin-top: 40px;
+      text-transform: uppercase;
+      border: none;
+      letter-spacing: 2px;
+    }
+
+    .topic-description {
+      width: 100%;
+    }
+
+    .wrapp-logo-new {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .news {
+      width: 40%;
+      padding: 24px;
+      color: #fff;
+      background-color: rgb(0 0 26);
+    }
+
+    .news h2 {
+      font-size: 3rem;
+      color: rgb(231 171 85);
+    }
+
+    .line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      /* margin: 50px 0; */
+      background-color: #475569;
+    }
+
+    .news h4 {
+      font-size: 2rem;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      line-height: 50px;
+    }
+
+    .news p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      /* line-height: 50px; */
+    }
+
+
+
+
     @media only screen and (max-width: 576px) {
 
       .container {
         max-width: 576px;
+      }
+
+      .wrapp-logo-new {
+        display: block;
+      }
+
+      .wrapp-logo {
+        width: 90vw;
       }
 
       main {
@@ -175,37 +305,35 @@
       }
 
       .description {
-        line-height: 1.5;
         font-size: 3rem;
-        color: rgb(106 106 106);
       }
 
       .more button {
         width: 290px;
         height: 75px;
-        color: #fff;
-        background: rgb(241 93 81);
         font-size: 2.2rem;
         margin-top: 40px;
-        text-transform: uppercase;
-        border: none;
-        letter-spacing: 8px;
       }
 
       .news {
+        width: 95vw;
         margin-top: 50px;
         padding: 24px;
         color: #fff;
         background-color: rgb(0 0 26);
       }
 
-      h2 {
+      .news h2 {
         font-size: 6rem;
-        color: rgb(231 171 85);
         padding: 25px 0;
       }
 
-      h4 {
+      .topic h2 {
+        font-size: 6rem;
+      }
+
+
+      .news h4 {
         font-size: 4rem;
         padding: 30px 0;
       }
@@ -230,6 +358,10 @@
         padding: 50px 0;
       }
 
+      .about img {
+        width: 100%;
+      }
+
       .about h2 {
         color: rgb(181 181 181);
         padding-top: 0;
@@ -242,14 +374,27 @@
 
       .topic {
         width: 60vw;
-        padding-left: 24px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
       }
 
       .text-size {
         font-size: 2rem;
+      }
+
+      .top-art {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .primary-topic {
+        display: block;
+        width: 90vw;
+      }
+
+      .topic-description {
+        width: 90vw;
       }
 
 
@@ -286,69 +431,79 @@
     </header>
     <main>
       <section>
-        <div class="top-banner">
-          <picture>
-            <source media="(max-width: 600px)" srcset="./assets/images/image-web-3-mobile.jpg">
-            <source media="(min-width: 600px)" srcset="./assets/images/image-web-3-desktop.jpg">
-            <img alt="Kolorowe klocki" src="./assets/images/image-web-3-desktop.jpg">
-          </picture>
-        </div>
-        <h1>The Bright Future of Web 3.0?</h1>
-        <div>
-          <p class="description">We dive into the next evolution of the web that claims to put the power of the
-            platforms back into the
-            hands of the people. But is it really fulfilling its promise?</p>
-        </div>
-        <div class="more">
-          <button>Read more</button>
-        </div>
-        <div class="news">
-          <h2>New</h2>
-          <div>
-            <div>
-              <h4>Hydrogen VS Electric Cars</h4>
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        <div class="wrapp-logo-new">
+          <div class="wrapp-logo">
+            <div class="top-banner">
+              <picture>
+                <source media="(max-width: 600px)" srcset="./assets/images/image-web-3-mobile.jpg">
+                <source media="(min-width: 600px)" srcset="./assets/images/image-web-3-desktop.jpg">
+                <img alt="Kolorowe klocki" src="./assets/images/image-web-3-desktop.jpg">
+              </picture>
+            </div>
+            <div class="primary-topic">
+              <h1>The Bright Future of Web 3.0?</h1>
+              <div class="topic-description">
+                <div>
+                  <p class="description">We dive into the next evolution of the web that claims to put the power of the
+                    platforms back into the
+                    hands of the people. But is it really fulfilling its promise?</p>
+                </div>
+                <div class="more">
+                  <button>Read more</button>
+                </div>
+              </div>
             </div>
           </div>
-          <span class="line"></span>
-          <div>
+          <div class="news">
+            <h2>New</h2>
             <div>
-              <h4>The Downsides of AI Artistry</h4>
-              <p>What are the possible adverse effects of on-demand AI image generation?</p>
+              <div>
+                <h4>Hydrogen VS Electric Cars</h4>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </div>
             </div>
-          </div>
-          <span class="line"></span>
-          <div>
+            <span class="line"></span>
             <div>
-              <h4>Is VC Funding Drying Up?</h4>
-              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              <div>
+                <h4>The Downsides of AI Artistry</h4>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+              </div>
+            </div>
+            <span class="line"></span>
+            <div>
+              <div>
+                <h4>Is VC Funding Drying Up?</h4>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div class="about">
-          <div><img src="./assets/images/image-retro-pcs.jpg" alt="Old computer."></div>
-          <div class="topic">
-            <h2>01</h2>
-            <h5>Reviving Retro PCs</h5>
-            <p class="description text-size">What happens when old PCs are given modern upgrades?</p>
+        <div class="top-art">
+          <div class="about">
+            <div><img src="./assets/images/image-retro-pcs.jpg" alt="Old computer."></div>
+            <div class="topic">
+              <h2>01</h2>
+              <h5>Reviving Retro PCs</h5>
+              <p class="description text-size">What happens when old PCs are given modern upgrades?</p>
+            </div>
           </div>
-        </div>
-        <div class="about">
-          <div><img src="./assets/images/image-top-laptops.jpg" alt="Klawiatura."></div>
-          <div class="topic">
-            <h2>02</h2>
-            <h5>Top 10 Laptops of 2022</h5>
-            <p class="description text-size">Our best picks for various needs and budgets.</p>
+          <div class="about">
+            <div><img src="./assets/images/image-top-laptops.jpg" alt="Klawiatura."></div>
+            <div class="topic">
+              <h2>02</h2>
+              <h5>Top 10 Laptops of 2022</h5>
+              <p class="description text-size">Our best picks for various needs and budgets.</p>
+            </div>
           </div>
-        </div>
-        <div class="about">
-          <div><img src="./assets/images/image-top-laptops.jpg" alt="Klawiatura."></div>
-          <div class="topic">
-            <h2>03</h2>
-            <h5>The Growth of Gaming</h5>
-            <p class="description text-size">How the pandemic has sparked fresh opportunities</p>
+          <div class="about">
+            <div><img src="./assets/images/image-gaming-growth.jpg" alt="Klawiatura."></div>
+            <div class="topic">
+              <h2>03</h2>
+              <h5>The Growth of Gaming</h5>
+              <p class="description text-size">How the pandemic has sparked fresh opportunities</p>
+            </div>
           </div>
         </div>
       </section>
